@@ -1,0 +1,1 @@
+<li id="PHOTO" class="button dh"><a href="[field:typeurl /]"><div class="li-a1">ПаІб</div><div class="li-a2">PHOTO </div></a></li>

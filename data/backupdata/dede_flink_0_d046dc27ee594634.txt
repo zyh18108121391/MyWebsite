@@ -1,0 +1,1 @@
+INSERT INTO `dede_flink` VALUES('2','1','http://www.dedecms.com','÷Ø√ŒCMSπŸ∑Ω','','','','1226375403','1','2');

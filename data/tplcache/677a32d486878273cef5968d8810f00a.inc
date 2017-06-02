@@ -1,0 +1,1 @@
+<li><a href="[field:typeurl /]">ПаІб-PHOTO</a></li>

@@ -1,0 +1,1 @@
+<a href="[field:typeurl /]" title="Ω¯»Î¡Ù—‘«Ω">¡Ù—‘«Ω</a>

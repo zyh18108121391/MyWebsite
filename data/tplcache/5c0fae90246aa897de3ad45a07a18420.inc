@@ -1,0 +1,1 @@
+<li><a href="[field:typeurl /]">ธ๘ฮาม๔ัิ<img src="{dede:global.cfg_cmspath/}/templets/default/images/messages.png" width="20" height="20" /></a></li>

@@ -1,0 +1,1 @@
+<span id="head_right"><a href="[field:typeurl /]">MORE+</a></span>

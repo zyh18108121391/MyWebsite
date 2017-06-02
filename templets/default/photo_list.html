@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<title>{dede:global.cfg_webname/}_{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field name=keywords/}" />
+<meta name="description" content="{dede:field name=description function=html2text(@me)/}" />
+
+<link href="{dede:global.cfg_cmspath/}/templets/default/style.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_cmspath/}/templets/default/photostyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/default/pic.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/default/runphoto.js"></script>
+<script src="{dede:global.cfg_cmspath/}/templets/default/js/jquery-1.11.3.min.js"></script>
+<script src="{dede:global.cfg_cmspath/}/templets/default/js/music.js"></script>
+</head>
+
+<body>
+<div class="bd">
+
+{dede:include filename="head.html"/}
+
+  <div id="content">
+  	<div id="article_content">
+		
+		{dede:include filename="article_left.html"/}
+		<div id="article_right">
+			<div id="header">
+				<span id="head_left">>>当前位置:{dede:field name='position'/}</span>
+			</div>
+			
+			<div id="article_right_list_PHOTO">
+			<ul class="gnineh">
+			
+			{dede:list pagesize='9' typeid='43'titlelen='20' }
+				<li>
+					<a href="[field:arcurl/]" target="_blank" title="[field:title function='html2text(@me)'/]"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"></a>
+       				 <div class="info">
+						<h2>[field:title/]</h2>
+           				 <p>更新时间：[field:pubdate function="GetDateMK(@me)"/]</p>
+       				 </div>
+				</li>
+			{/dede:list}
+			
+			</ul>
+			
+			</div><!--article_right_listPHOTO end-->
+			<div style="margin-top:700px"></div>
+			<div class="dede_pages">
+   			<ul class="pagelist">
+  			  {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+  			 </ul>
+ 			 </div>
+		</div>
+	</div>
+	
+  </div><!--content end-->
+<div class="clear"></div>
+{dede:include filename="footer.html"/}
+
+	
+  </div>
+</body>
+</html>

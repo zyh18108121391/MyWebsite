@@ -1,0 +1,55 @@
+body
+{
+    font-size: 12px;
+    font-family: 微软雅黑;
+    margin: 0;
+}
+.main
+{
+    width: 960px;
+    height: 960px;
+    margin: 0 auto;
+    background-image: url(../images/wall.gif);
+}
+.note
+{
+    width: 235px;
+    cursor: move;
+    display: none;
+    position: absolute;
+}
+.nhead
+{
+    width: 175px;
+    height: 23px;
+    padding: 45px 30px 0px 30px;
+}
+.nbody
+{
+    width: 190px;
+    height: auto;
+    padding: 5px 15px 5px 30px;
+}
+.nfoot
+{
+    width: 185px;
+    height: 32px;
+    padding: 30px 20px 10px 30px;
+}
+.moodpic
+{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.moodpic img
+{
+    width: 20px;
+    height: 20px;
+}
+
+.username
+{
+    text-align: right;
+    float: right;
+}

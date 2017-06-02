@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>正在播放-<?php echo $vname;?> </title>
+<link href="<?php echo $cfg_templets_skin;?>/style/dedecms.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../style/dedecms.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+.linklist{
+	width:700px;
+}
+.linklist .txtlink{
+	width:700px;
+	overflow:hidden;
+}
+.linklist .txtlink a{
+	display:block;
+	float:left;
+	height:15px;
+	line-height:15px;
+	padding-right:16px;
+	padding-left:16px;
+	margin:17px 0px 0px -1px;
+	white-space:nowrap;
+	border-left:1px solid #EEE;
+}
+
+.linklist .imglink{
+	width:700px;
+	overflow:hidden;
+	margin-top:10px;
+}
+.linklist .imglink a{
+	width:88px;
+	height:31px;
+	display:block;
+	float:left;
+	overflow:hidden;
+	border:3px solid #FFF;
+	margin:10px 12px 2px 8px;
+}
+.linklist .imglink a:hover{
+	border:3px solid #EEE;
+}
+.linklist .imglink a img{
+	width:88px;
+	height:31px;
+}
+
+.linkadd {
+	margin-top:20px;
+}
+.linkadd dl{
+	width:600px;
+	clear:both;
+	padding-top:6px;
+	overflow:hidden;
+}
+.linkadd dl dt{
+	display:block;
+	float:left;
+	width:110px;
+	height:31px;
+	text-align:right;
+	line-height:27px;
+}
+.linkadd dl dd {
+	width:480px;
+	float:right;
+}
+.linkadd dl dd input{
+	font-size:12px;
+	border:1px solid #888;
+	padding:4px;
+	background:url(../templets/images/login_input_bg.gif) left top no-repeat;
+	margin-right:5px;
+}
+.linkadd dl dd select{
+	margin:4px 0px 0px 0px;
+}
+.linkadd dl dd img{
+	vertical-align:middle;
+}
+.linkadd dl dd textarea{
+	font-size:12px;
+	border:1px solid #888;
+	padding:4px;
+	background:url(../templets/images/login_input_bg.gif) left top no-repeat;
+}
+.linkadd .submit{
+	padding:10px 0px 0px 120px;
+	float:left;
+}
+.linkadd .submit input{
+	font-size:14px;
+	padding:2px 5px 2px 5px;
+}
+
+
+
+.votelist{
+	width:700px;
+	margin-top:16px;
+}
+.votelist .vtitle h2{
+	font-size:16px;
+	color:#222;
+	letter-spacing:2px;
+	font-weight:normal;
+}
+.votelist .vtitle span{
+	line-height:35px;
+	color:#666666;
+	text-indent:10px;
+}
+.votelist .vbox{
+	width:700px;
+}
+.votelist .vbox dl{
+	width:600px;
+	height:31px;
+	clear:both;
+	overflow:hidden;
+	margin-top:7px;
+}
+.votelist .vbox dl dt{
+	width:200px;
+	float:left;
+	text-align:right;
+	line-height:15px;
+	color:#333;
+	font-weight:bold;
+}
+.votelist .vbox dl dd{
+	width:390px;
+	float:right;
+	background:#EEE;
+	height:13px;
+	font-size:11px;
+	line-height:11px;
+	color:#777;
+}
+.votelist .vbox dl dd strong{
+	color:#000;
+	margin-right:2px;
+}
+.votelist .vbox dl dd span{
+	height:13px;
+	text-indent:3px;
+	padding-right:3px;
+	display:block;
+	background:#690;
+	color:#CD9;
+	border-right:1px solid #CCC;
+	float:left;
+}
+.votelist .vbox dl dd span strong{
+	color:#FFF;
+}
+
+.maplist{
+	line-height:21px;
+}
+.maplist * b{
+	display:block;
+	font-size:14px;
+	margin-top:16px;
+}
+.play{
+	text-align: center;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 20px;
+}
+.play a {
+	line-height: 20px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 12px;
+	float: left;
+	width: 220px;
+	height: 20px;
+	text-decoration: none;
+}
+.play a:hover {
+	background-color: #EEEEEE;
+	color: #000000;
+}
+.ap {
+	background-color: #666666;
+}
+</style>
+
+</head>
+<body class="mapspage">
+
+<div class="header">
+	<div class="top w960 center">
+		<div class="title">
+			<h1>
+				<h1><a href="<?php echo $cfg_basehost;?>"><?php echo $cfg_webname;?></a></h1>
+			</h1>
+		</div><!-- /title -->
+	</div><!-- /top -->
+</div><!-- /header -->
+
+<div class="w960 clear center mt1">
+	<div class="sp-title">
+    <h2><?php echo $vname;?></h2>
+    <span class="more">	<a href='<?php echo $cfg_basehost;?>'>返回首页</a><?php echo  $u;?><?php echo $softrank;?><?php echo $language;?></span>
+    </div>
+
+	<div class="linkbox">
+		  <div class="play">
+	    <table width="100%" border="0" cellpadding="0" cellspacing="1">
+          <tr>
+            <td align="left"><div style="clear:both;float:left;overflow:hidden;width:<?php echo $width;?>px; height:<?php echo $height;?>px;position:relative;">
+<span id="loadimgplay"><iframe src="<?php echo $cfg_basehost;?>/templets/plus/play/gg.htm" frameborder="0" scrolling="no" width="<?php echo $width;?>" height="<?php echo $height;?>"></iframe></span><script language="javascript">setTimeout("swf();",5000);function swf(){document.getElementById("loadimgplay").style.display="none";}</script>
+<?php	echo play($players,$vurl);?></div></td>
+            <td width="260" align="left" valign="top" bgcolor="#000000">
+            <?php for($i=0;$i<count($palylist);$i++){
+                $list = explode('{span}',$palylist[$i]);
+                if(empty($list[0])) continue ;
+                if(empty($list[1])) continue ;
+                $playid = $i+1;
+            ?>
+            <a href="?aid=<?php echo $aid?>&play=<?php echo $playid?>" <?php if($i == $play) echo 'class="ap"';?>>&gt;<?php echo $list[0]?></a><br />
+            <?php
+            }?>
+			</td>
+          </tr>
+        </table>		
+	  </div>
+	</div>
+
+
+</div>
+
+
+<div class="footer">
+<p class="link">
+		网站版权信息及免责声明
+  </p>
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+	<p class="powered">
+		Powered by <a href="http://www.dedecms.com" title="织梦内容管理系统(DedeCms)--国内最专业的PHP网站管理系统，轻松建站的首选利器。" target="_blank"><strong>Dede<span>CMS</span></strong></a> &copy; 2004-2008 DesDev Inc.
+	</p><!-- /powered -->
+	
+</div>
+
+</body>
+</html>

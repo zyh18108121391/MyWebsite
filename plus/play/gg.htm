@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TOPMV顶好影音播放器</title>
+<style>
+html,body {background-color: #000000;}
+.wrap {position:absolute; top:50%; width:100%; z-index:10000; margin:0px auto;}
+.wraper {position:absolute; top:-50px; width:100%; margin:0px auto;}
+.down {position:relative; margin:auto; width:450px; height:80px; text-align:center;}
+.button {color:#FFF; float:left; display:block; width:200px; height:80px; line-height:80px; background-color:#006699; font-size:30px; font-weight: bolder;}
+.content {color:#069; float:left; display:block; width:250px; height:80px; line-height:36px; background-color:#EEE; font-size:12px; overflow: hidden;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="wraper">
+<script language="javascript" type="text/javascript">
+	//获取问号后面的内容
+	function getquery(queryStringName)
+	{
+		var returnValue="";
+		var URLString=new String(document.location);
+		var serachLocation=-1;
+		var queryStringLength=queryStringName.length;
+		do{
+			serachLocation=URLString.indexOf(queryStringName+"\=");
+			if (serachLocation!=-1){
+				if ((URLString.charAt(serachLocation-1)=='?') || (URLString.charAt(serachLocation-1)=='&')){
+					URLString=URLString.substr(serachLocation);
+					break;
+				}
+				URLString=URLString.substr(serachLocation+queryStringLength+1);
+			}
+		}
+		while (serachLocation!=-1);
+
+		if (serachLocation!=-1){
+			var seperatorLocation=URLString.indexOf("&");
+			if (seperatorLocation==-1){
+				returnValue=URLString.substr(queryStringLength+1);
+			}else{
+				returnValue=URLString.substring(queryStringLength+1,seperatorLocation);
+			}
+		}
+		return returnValue;
+	}
+
+	//安装播放器相关参数
+	var download = '';
+	var downname = '';
+	switch (getquery('do'))
+	{
+		case 'qvod':
+			downname = 'QVOD快播播放器';
+			download = 'http://www.kuaibo.com/';
+			break;
+		case 'baidu':
+			downname = '百度影音播放器';
+			download = 'http://player.baidu.com/';
+			break;
+		case 'pvod':
+			downname = 'PVOD闪播播放器';
+			download = 'http://www.pvod.cn/';
+			break;
+		case 'web9':
+			downname = '久久影音播放器';
+			download = 'http://www.webplayer9.com/';
+			break;
+		default:
+			downname = '没有指定播放器';
+			download = 'http://www.topmv.net/';
+	}
+
+	document.write('<div class="down">');
+	document.write('<font class="content">请先安装【'+ downname +'】<br />安装完成后请刷新页面或按F5</font>');
+	document.write('<a href="'+ download +'" class="button" target="_blank">立即下载安装</a>');
+	document.write('</div>');
+</script>
+</div>
+</div>
+</body>
+</html>

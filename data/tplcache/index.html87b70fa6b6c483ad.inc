@@ -1,0 +1,46 @@
+<?php
+$z[0]=Array("global","",257,283);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",327,357);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",394,421);
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("global","",505,531);
+$z[3][4]['name']="cfg_cmspath";
+$z[4]=Array("global","",609,635);
+$z[4][4]['name']="cfg_cmspath";
+$z[5]=Array("global","",742,768);
+$z[5][4]['name']="cfg_cmspath";
+$z[6]=Array("global","",841,867);
+$z[6][4]['name']="cfg_cmspath";
+$z[7]=Array("include","",1863,1899);
+$z[7][4]['filename']="head.html";
+$z[8]=Array("arclist","\r\n		<a href=\"[field:arcurl/]\" title=\"[field:title function='html2text(@me)'/]\"><img src=\"[field:litpic/]\"height=\"250px\" width=\"650\" /></a>\r\n		",1983,2187);
+$z[8][4]['row']="4";
+$z[8][4]['typeid']="49";
+$z[8][4]['type']="commend";
+$z[9]=Array("type","\r\n			<span id=\"head_right\"><a href=\"[field:typeurl /]\">MORE+</a></span>\r\n			",2319,2430);
+$z[9][4]['typeid']="45";
+$z[10]=Array("type","\r\n			<span id=\"head_right\"><a href=\"[field:typeurl /]\">MORE+</a></span>\r\n			",2854,2965);
+$z[10][4]['typeid']="49";
+$z[11]=Array("arclist","\r\n					<li><span style=\"float:right; margin-right:5px; color:#CCCCCC\">[field:pubdate function=MyDate('Y-m-d',@me)/]</span>\r\n					<a href=\"[field:arcurl /]\" title=\"[field:title /]\">[field:title /]...</a>\r\n					</li>\r\n					",3017,3321);
+$z[11][4]['typeid']="49";
+$z[11][4]['titlelen']="48";
+$z[11][4]['row']="8";
+$z[11][4]['orderby']="sortrank";
+$z[12]=Array("type","\r\n			<span id=\"head_right\"><a href=\"[field:typeurl /]\">MORE+</a></span>\r\n			",3443,3554);
+$z[12][4]['typeid']="44";
+$z[13]=Array("type","\r\n			<span id=\"head_right\"><a href=\"[field:typeurl /]\">MORE+</a></span>\r\n			",3994,4105);
+$z[13][4]['typeid']="43";
+$z[14]=Array("arclist","\r\n	<DIV class=box><A class=imgBorder href=\"[field:arcurl/]\" title=\"[field:title/]\" target=_blank>[field:image/]</A> <P><A href=\"[field:arcurl/]\"  title=\"[field:title/]\" target=_blank>[field:title/]</A></P>\r\n	</DIV>\r\n	",4286,4624);
+$z[14][4]['row']="10";
+$z[14][4]['typeid']="43";
+$z[14][4]['orderby']="pubdate";
+$z[14][4]['type']="image";
+$z[14][4]['imgwidth']="124";
+$z[14][4]['imgheight']="84";
+$z[14][4]['titlelen']="12";
+$z[15]=Array("include","",5467,5505);
+$z[15][4]['filename']="footer.html";
+
+?>

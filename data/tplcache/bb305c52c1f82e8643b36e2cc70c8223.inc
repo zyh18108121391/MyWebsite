@@ -1,0 +1,1 @@
+<li id="VIDEO" onmouseover="mover_VIDEO()" onmouseout="mout_VIDEO()" class="button dh"><a href="{dede:field name='typeurl'/}"><div class="li-a1">สำฦต</div><div class="li-a2">VIDEO</div></a></li>

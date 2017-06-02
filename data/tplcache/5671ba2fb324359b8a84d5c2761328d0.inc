@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]" title="[field:title function='html2text(@me)' /]"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"/></a></li>

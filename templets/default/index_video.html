@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<title>{dede:global.cfg_webname/}_{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field name=keywords/}" />
+<meta name="description" content="{dede:field name=description function=html2text(@me)/}" />
+
+<link href="{dede:global.cfg_cmspath/}/templets/default/style.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_cmspath/}/templets/default/photostyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/default/pic.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/default/runphoto.js"></script>
+<script src="{dede:global.cfg_cmspath/}/templets/default/js/jquery-1.11.3.min.js"></script>
+<script src="{dede:global.cfg_cmspath/}/templets/default/js/music.js"></script>
+</head>
+
+<body>
+<div class="bd">
+
+{dede:include filename="head.html"/}
+
+  <div id="content">
+  	<div id="article_content" style="height:1050px">
+		
+		{dede:include filename="article_left.html"/}
+		
+		<div id="article_right" style="height:1050px">
+			<div id="header">
+				<span id="head_left">>>当前位置:{dede:field name='position'/}</span>
+			</div>
+			
+			<div id="article_right_list_VIDEO">
+				<div id="VIDEO_mulu">
+					<div id="mylike">我喜欢的视频</div>
+					<div id="mylike_ul">
+						<ul>
+							<li><a href="#huoying613">火影忍者613</a></li>
+							<li><a href="#huoying612">火影忍者612</a></li>
+							<li><a href="#huoying611">火影忍者611</a></li>
+							<li><a href="#xuduba">胥渡吧-上班是会呼吸的痛</a></li>
+						</ul>	
+					</div>
+				</div>
+				<div id="VIDEO_videos">
+					<div id="huoying">
+					<div id="video_title"><a name="huoying613">火影忍者613</a></div>
+					<embed src="http://www.tudou.com/a/Lqfme5hSolM/&bid=05&iid=132329576&rpid=438682365&resourceId=438682365_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="100%" height="225px"></embed>
+
+					<div id="video_title"><a name="huoying612">火影忍者612</a></div>
+					<embed src="http://www.tudou.com/a/Lqfme5hSolM/&bid=05&iid=132323876&rpid=438682365&resourceId=438682365_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="100%" height="225px"></embed>
+					
+					<div id="video_title"><div id="huoying611">火影忍者611</div></div>
+					<embed src="http://www.tudou.com/a/Lqfme5hSolM/&bid=05&iid=132317464&rpid=438682365&resourceId=438682365_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="100%" height="225px"></embed>
+					
+					<div id="video_title"><div id="xuduba">胥渡吧-上班是会呼吸的痛</div></div>
+					<embed src="http://player.youku.com/player.php/sid/XNjMwOTA3MjIw/v.swf" allowFullScreen="true" quality="high" width="100%" height="225px" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+					</div>
+				</div>
+			
+			</div><!--article_right_list_VIDEO end-->
+			<div class="clear"></div>
+			
+			
+		</div><!--article_right end-->
+		<div class="clear"></div>
+	</div><!--article content end-->
+	
+  </div><!--content end-->
+<div class="clear"></div>
+{dede:include filename="footer.html"/}
+	
+  </div>
+</body>
+</html>

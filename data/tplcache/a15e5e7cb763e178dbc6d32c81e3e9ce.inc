@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl]">{field:arctitle]</a></li>

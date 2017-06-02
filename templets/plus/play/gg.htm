@@ -1,0 +1,38 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+<title>视频广告页</title>
+ <style>
+  body{margin:2px;padding:0px;font-size:12px;background:#000000}
+ </style>
+ <script language="javascript" src="jquery.js"></script>
+<script language="javascript">
+ $(document).ready(function(){
+  var time=location.search;
+  var n=0;
+  time=time.replace('?','');
+  function leave()
+  {
+  document.getElementById("ShowAdLeaveTime").innerHTML='广告也精彩,剩余'+(time-n)+'秒';
+   n++;
+  setTimeout(function(){leave()},1000);	
+  }
+  setTimeout(function(){leave()},1000);	
+  });
+</script>
+</head>
+<body>
+<!--此段代码请不要删除--->
+<div id="ShowAdLeaveTime" style="position:absolute; z-index:1; right: 10px; top:10px; background-color: #ff6600; layer-background-color: #f1efd9; border: 1px none #cccccc; width: 200px;padding-left:3px; height: 25px;line-height:25px;text-align:center">广告也精彩,剩余-38秒</div>
+<!--以上代码请不要删除-->
+
+<table border="0" width="100%" height="100%" style="table-layout: fixed;" align="center">
+<tbody><tr>
+ <td style="word-wrap:break-word;">
+<!-- 这里换成你的图片地址或者广告代码 -->
+<img src="ad.jpg">
+ </td>
+</tr>
+</tbody></table>
+
+
+</body></html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+
+<meta name="baidu-site-verification" content="owwbBlKc7j" />
+
+<link href="{dede:global.cfg_cmspath/}/templets/default/style.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_cmspath/}/templets/default/photostyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/default/runphoto.js"></script>
+<script src="{dede:global.cfg_cmspath/}/templets/default/js/jquery-1.11.3.min.js"></script>
+<script src="{dede:global.cfg_cmspath/}/templets/default/js/music.js"></script>
+
+
+
+</head>
+
+<body>
+<div class="bd">
+
+{dede:include filename="head.html"/}
+
+  
+  <div id="content">
+  		<div id="ibanner">
+		<div id="ibanner_pic">
+
+		{dede:arclist row=4 typeid='49' type='commend'}
+		<a href="[field:arcurl/]" title="[field:title function='html2text(@me)'/]"><img src="[field:litpic/]"height="250px" width="650" /></a>
+		{/dede:arclist} 
+		
+		</div>
+		</div><!--ibanner end-->
+		<div id="aboutus">
+		<div id="header">
+			<span id="head_left">关于-ABOUT</span>
+			{dede:type typeid='45'}
+			<span id="head_right"><a href="[field:typeurl /]">MORE+</a></span>
+			{/dede:type}
+		</div>
+		<div id="title">小房子</div>
+		<div id="nr">小房子是一个温馨的虚拟内心，是一个倾诉的地方，在这里记录所有的值得回忆的东西，包括照片、日记、视频等。</br></br>
+
+		这里属于郑银华的另一个窗口。大家喜欢的话就多来看看，留留言什么的。十分感激！
+		</div>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="storyAndVideo">
+		<div id="story">
+			<div id="header">
+			<span id="head_left">故事-STORY</span>
+			{dede:type typeid='49'}
+			<span id="head_right"><a href="[field:typeurl /]">MORE+</a></span>
+			{/dede:type}
+			</div>
+			<div id="story_ul">
+				<ul>
+					{dede:arclist typeid='49' titlelen='48' row='8' orderby='sortrank' }
+					<li><span style="float:right; margin-right:5px; color:#CCCCCC">[field:pubdate function=MyDate('Y-m-d',@me)/]</span>
+					<a href="[field:arcurl /]" title="[field:title /]">[field:title /]...</a>
+					</li>
+					{/dede:arclist}
+				</ul>
+			</div>
+		</div>
+		<div id="Video">
+			<div id="header">
+			<span id="head_left">视频-VIDEO</span>
+			{dede:type typeid='44'}
+			<span id="head_right"><a href="[field:typeurl /]">MORE+</a></span>
+			{/dede:type}
+			</div>
+				<div id="video_content">
+				<embed src="http://www.tudou.com/a/Lqfme5hSolM/&bid=05&iid=132329576&rpid=438682365&resourceId=438682365_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="100%" height="225px"></embed>
+				</div>
+				</div>
+		</div>
+		
+		<div id="Photos">
+			<div id="header">
+			
+			<span id="head_left">相册-PHOTO</span>
+			{dede:type typeid='43'}
+			<span id="head_right"><a href="[field:typeurl /]">MORE+</a></span>
+			{/dede:type}
+			</div>		
+<!--滚动图片 start-->
+<DIV class=rollphotos>
+<DIV class=blk_29>
+<DIV class=LeftBotton id=LeftArr></DIV>
+<DIV class=Cont id=ISL_Cont_1><!-- 图片列表 begin -->
+
+	{dede:arclist row=10 typeid='43' orderby=pubdate type='image' imgwidth='124' imgheight='84' titlelen='12'}
+	<DIV class=box><A class=imgBorder href="[field:arcurl/]" title="[field:title/]" target=_blank>[field:image/]</A> <P><A href="[field:arcurl/]"  title="[field:title/]" target=_blank>[field:title/]</A></P>
+	</DIV>
+	{/dede:arclist}
+<!-- 图片列表 end --></DIV>
+<DIV class=RightBotton id=RightArr></DIV></DIV>
+<SCRIPT language=javascript type=text/javascript>
+		<!--//--><![CDATA[//><!--
+		var scrollPic_02 = new ScrollPic();
+		scrollPic_02.scrollContId   = "ISL_Cont_1";
+		scrollPic_02.arrLeftId      = "LeftArr";//左箭?稩D
+		scrollPic_02.arrRightId     = "RightArr"; //右箭头ID
+		scrollPic_02.frameWidth     = 908;//显示框宽度
+		scrollPic_02.pageWidth      = 160; //翻页宽度
+		scrollPic_02.speed          = 50; //移动速度(毫秒，越小越快)
+		scrollPic_02.space          = 10; //每次移动像素(单位px，越大越快)
+		scrollPic_02.autoPlay       = true; //自动播放
+		scrollPic_02.autoPlayTime   = 3; //自动播放间隔时间(秒)
+		scrollPic_02.initialize(); //初始化
+		//--><!]]>
+	</SCRIPT>
+	</DIV>
+	<!--滚动图片 end-->
+					
+		</div>
+  	</div><!--content end-->
+	
+{dede:include filename="footer.html"/}
+	
+  </div>
+</body>
+</html>

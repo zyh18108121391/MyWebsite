@@ -1,0 +1,1 @@
+<a href="[field:typeurl /]" title="进入3D相册">3D相册</a>

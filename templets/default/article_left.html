@@ -1,0 +1,29 @@
+<div id="article_left">
+			<div id="NewStory">
+				<div id="header">
+				<span id="head_left">最新动态-NEW STORY</span>
+				</div>
+				<div id="article_news">
+					<ul>
+						{dede:arclist   orderby='id' limit='0,5'titlelen='30' typeid='top'}
+						<li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]...</a></li>
+						{/dede:arclist}
+					</ul>
+				</div>
+			</div>
+			<div id="RecommendImg">
+				<div id="header">
+				<span id="head_left">推荐图文-RECOMMENT PHOTO </span>
+				{dede:type typeid='43'}
+				<span id="head_right"><a href="[field:typeurl /]">MORE+</a></span>
+				{/dede:type}
+				</div>
+				<div id="article_imgs">
+					<ul>
+						{dede:arclist row=4 typeid='43' type='commend' imgwidth='120' imgheight='120'}
+						<li><a href="[field:arcurl/]" title="[field:title/]">[field:image/]</a></li>
+						{/dede:arclist}
+					</ul>
+				</div>
+			</div>
+		</div><!--article_left end-->

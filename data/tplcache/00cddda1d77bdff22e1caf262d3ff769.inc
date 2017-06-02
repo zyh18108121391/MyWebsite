@@ -1,0 +1,1 @@
+<a href="[field:typeurl /]">3DПаІб</a>

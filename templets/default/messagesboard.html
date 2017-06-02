@@ -1,0 +1,136 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta content="@author @ken @1039110278"/>
+<meta content="转载请注明"/>
+<title>{dede:global.cfg_webname/}_{dede:field.title/}</title>
+
+<meta name="keywords" content="{dede:field name=keywords/}" />
+<meta name="description" content="{dede:field name=description function=html2text(@me)/}" />
+
+<link href="{dede:global.cfg_cmspath/}/templets/default/style.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_cmspath/}/templets/default/photostyle.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_cmspath/}/templets/default/style/base.css" rel="stylesheet" type="text/css"/>
+
+<script src="/templets/default/js/jquery-1.11.3.min.js"></script>
+<script src="/templets/default/js/music.js"></script>
+<script src="https://leancloud.cn/scripts/lib/av-0.4.5.min.js"></script>
+<script type="text/javascript">
+// 初始化 应用 id、param2：应用 key
+AV.initialize("fhncavci9kfflt7l6ydyj0pjo4mydsxhwkczkk6a42s1tse0","idh26dbr6e45sp4mb9vyoxpm8r05bfrwj2zjx5xkr8285jcq");
+</script>
+
+
+
+<script type="text/javascript">
+
+function mover_HOME(){
+	document.getElementById("HOME").style.marginTop="15px";	
+}
+function mout_HOME(){
+	document.getElementById("HOME").style.marginTop="0px";
+}
+
+function mover_STORY(){
+	document.getElementById("STORY").style.marginTop="15px";	
+}
+function mout_STORY(){
+	document.getElementById("STORY").style.marginTop="0px";
+}
+
+function mover_PHOTO(){
+	document.getElementById("PHOTO").style.marginTop="15px";	
+}
+function mout_PHOTO(){
+	document.getElementById("PHOTO").style.marginTop="0px";
+}
+
+function mover_VIDEO(){
+	document.getElementById("VIDEO").style.marginTop="15px";	
+}
+function mout_VIDEO(){
+	document.getElementById("VIDEO").style.marginTop="0px";
+}
+
+function mover_ABOUT(){
+	document.getElementById("ABOUT").style.marginTop="15px";	
+}
+function mout_ABOUT(){
+	document.getElementById("ABOUT").style.marginTop="0px";
+}
+</script>
+
+</head>
+
+<body>
+<div class="bd">
+
+<link rel="shortcut icon" href="favicon.ico" />
+{dede:include filename="head.html"/}
+
+  <div id="content">
+  			<div class="main">
+      		<div id="lyb_head">郑银华的留言板</div>      
+            <div id="Messages">     	
+	   </div>         
+        </div>
+  <div id="message_div">
+  	<form class="elegant-aero">
+		<h1>Contact Form
+			<span>Please fill all the texts in the fields.</span>
+		</h1>
+		<label style="height:48px;width:500px">
+			<span>称呼(Your Name):</span>
+		<input id="name" type="text" name="name" placeholder="Your Full Name" />
+		</label>
+		<label style="height:118px;width:500px">
+			<span>留言内容(Message) :</span>
+		<textarea id="message" name="message" placeholder="Your Message to Me"></textarea>
+		</label>
+		
+		<label style="height:48px;width:500px">
+			<span>信签颜色(Color) :</span><select  id="selectionColor" name="selectionColor">
+			<option value="LightBlue" style="background:#00FFFF">LightBlue(淡蓝色)</option>
+			<option value="pink" style="background:#FF99CC">Pink(淡粉红)</option>
+			</select>
+		</label>
+		<label style="height:56px;width:500px">
+			<span>表情(Expression):</span>			
+			<input name="Expression" type="radio" value="i_f01" checked="checked"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f01.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f02"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f02.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f03"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f03.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f04"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f04.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f05"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f05.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f06"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f06.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f07"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f07.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f08"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f08.png"><br>
+			<input name="Expression" type="radio" value="i_f09"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f09.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f10"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f10.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f11"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f11.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f12"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f12.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f13"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f13.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f14"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f14.png">&nbsp;
+			<input name="Expression" type="radio" value="i_f15"><img src="{dede:global.cfg_cmspath/}/templets/default/Expression/i_f15.png">&nbsp;
+			<br>
+		</label>
+		<label style="height:36px;width:500px">
+			<span >验证码(code)：</span><input  style="width:200px" type="text" id="inputCode"/>
+			<div class="code" id="checkCode" onclick="createCode()" >点击获取</div>
+		</label>
+		<label style="height:36px;width:500px">
+			<span>&nbsp;</span>
+		<input type="button" class="button"  onclick="SendMessage()" value="Send" />
+		</label>	
+	</form>
+  
+  </div>
+	
+  </div><!--content end-->
+  <div class="clear"></div>
+{dede:include filename="footer.html"/}
+	
+  </div>
+<script src="{dede:global.cfg_cmspath/}/templets/default/js/index.js" type="text/javascript"></script>
+
+</body>
+</html>
